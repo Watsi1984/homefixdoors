@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 40px;
+
+    background: #d8d8d8;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.brochure {
+    width: min(1500px, 92vw);
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15),
+                0 25px 60px rgba(0,0,0,0.25);
+}
+
+.logo-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 80px;
+    background: white;
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+}
+
+.phone-section {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5px;
+}
+
+.phone-text-top,
+.phone-text-bottom {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.phone-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 20px;
+
+    background: #f58220;
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    transition: 0.3s ease;
+}
+
+.phone-btn:hover {
+    background: #e46f10;
+    transform: translateY(-2px);
+}
+
+.phone-icon {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.hero {
+
+}
+
+.quote {
+
+}
+
+.doors {
+
+}
+
+.fitted {
+
+}
+
+.hours {
+
+}
+
+.owner {
+
+}
+
+.reviews {
+
+}
+
+.popular {
+
+}
+
+.whychoose {
+
+}
+
+.whatis {
+
+}
+
+.faqs {
+
+}
