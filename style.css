@@ -201,7 +201,7 @@ body {
     width: 150px;
     background: #fff;
     padding: 10px 10px 16px;
-    border-radius: 2px;
+    border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
@@ -219,13 +219,128 @@ body {
     font-weight: 600;
 }
 
-.fitted {
-
+.fitted-section {
+    background: #f58220;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-.hours {
-
+.fitted-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.fitted-section h1 {
+    margin: 0 0 20px;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.fitted-section p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.fitted-section h2 {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.call-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 20px;
+
+    background: #fff;
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    transition: 0.3s ease;
+}
+
+.call-btn:hover {
+    background: #e8e8e8;
+    transform: translateY(-2px);
+}
+
+.opening-section {
+    background: #fff;
+    padding: 20px 80px;
+}
+
+.opening-card {
+    background: #efefef;
+    display: grid;
+    grid-template-columns: 1fr 550px;
+    align-items: start;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.opening-text {
+    max-width: 520px;
+}
+
+.opening-text h1 {
+    margin-top: 0;
+    color: #f58220;
+    font-size: 2.2rem;
+    line-height: 1.15;
+}
+
+.opening-text h2 {
+    margin-top: 0;
+    color: #f58220;
+    font-size: 1.2rem;
+    line-height: 1.15;
+}
+
+.opening-text h3 {
+    margin-top: 0;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.15;
+}
+
+.opening-map {
+    height: 100%;
+}
+
+.opening-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.hours-table {
+    border-collapse: collapse;
+}
+
+.hours-table td {
+    padding: 2px 0;
+}
+
+.hours-table td:first-child {
+    padding-right: 60px;
+    font-weight: bold;
+}
+
 
 .owner {
 
@@ -249,4 +364,191 @@ body {
 
 .faqs {
 
+}
+
+
+/* CSS Styling to make page responsive on tablet size screens */
+
+
+@media (max-width: 900px) {
+    body {
+        padding: 20px;
+    }
+
+    .logo-banner {
+        padding: 10px 30px;
+    }
+
+    .hero-content {
+        left: 35px;
+        max-width: 520px;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .door-grid {
+        grid-template-columns: repeat(2, 180px);
+        column-gap: 50px;
+    }
+
+    .fitted-section {
+        padding: 50px 40px;
+    }
+
+    .fitted-section h1 {
+        font-size: 2.1rem;
+    }
+
+    .fitted-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .fitted-section p {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .opening-section {
+        padding: 50px 40px;
+    }
+
+    .opening-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 40px
+    }
+
+    .opening-map img {
+        height: 320px;
+    }
+}
+
+
+/* CC Styling to make page responsive on mobile size screens */
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .logo-banner {
+        flex-direction :column;
+        gap: 15px;
+        padding: 18px 20px;
+
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .hero {
+        height: 520px;
+    }
+
+    .hero-content {
+        left: 20px;
+        right: 20px;
+        top: 50%;
+        max-width: none;
+    }
+
+    .hero-content h1 {
+        font-size: 1.7rem;
+        padding-left: 0
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    .hero-content ul {
+        padding-left: 20px;
+    }
+
+    .quote-banner {
+        padding: 20px;
+    }
+
+    .quote-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .quote-form input,
+    .quote-form button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .door-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .door-card {
+        width: 180px;
+    }
+
+    .fitted-section {
+        padding: 40px 20px;
+    }
+
+    .fitted-section h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .fitted-section h2 {
+        font-size: 0.8rem;
+        line-height: 0.8;
+        margin-bottom: 20px;
+    }
+
+    .fitted-section p {
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .opening-section {
+        padding: 40px 20px;
+    }
+
+    .opening-card {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 20px;
+    }
+
+    .opening-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .opening-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .opening-text h3 {
+        font-size: 1.4rem;
+    }
+
+    .hours-table td:first-child {
+        width: 120px;
+    }
+
+    .hours-table td {
+        font-size: 0.95rem;
+        padding: 2px 0;
+    }
+
+    .opening-map img {
+        height: 260px;
+    }
 }
