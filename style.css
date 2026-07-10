@@ -1,10 +1,17 @@
+/* CSS styling for the whole body of the document */
+
+
 body {
     margin: 0;
     padding: 40px;
 
     background: #d8d8d8;
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* CSS styling for the brochure style of the document */
+
 
 .brochure {
     width: min(1070px, 92vw);
@@ -15,6 +22,10 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.15),
                 0 25px 60px rgba(0,0,0,0.25);
 }
+
+
+/* CSS styling for the logo banner at the top */
+
 
 .logo-banner {
     display: flex;
@@ -52,7 +63,7 @@ body {
 
     padding: 10px 20px;
 
-    background: #f58220;
+    background: #fe731d;
     color: white;
 
     text-decoration: none;
@@ -74,6 +85,10 @@ body {
     font-size: 1.2rem;
     color: black;
 }
+
+
+/* CSS styling for the hero/image section */
+
 
 .hero {
     position: relative;
@@ -122,6 +137,10 @@ body {
     margin-bottom: 10px;
     line-height: 1.6;
 }
+
+
+/* CSS styling for the get a quote banner */
+
 
 .quote-banner {
     background: #000;
@@ -172,7 +191,7 @@ body {
     padding: 0 24px;
     border: none;
     border-radius: 30px;
-    background: #f58220;
+    background: #fe731d;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -184,6 +203,10 @@ body {
     background: #e46f10;
     transform: translateY(-2px);
 }
+
+
+/* CSS styling for the types of door section */
+
 
 .doors-section {
     padding: 20px;
@@ -219,8 +242,12 @@ body {
     font-weight: 600;
 }
 
+
+/* CSS styling for the need a door fitted section */
+
+
 .fitted-section {
-    background: #f58220;
+    background: #fe731d;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -277,6 +304,10 @@ body {
     transform: translateY(-2px);
 }
 
+
+/* CSS styling for the business opening hours section */
+
+
 .opening-section {
     background: #fff;
     padding: 20px 80px;
@@ -297,14 +328,14 @@ body {
 
 .opening-text h1 {
     margin-top: 0;
-    color: #f58220;
+    color: #fe731d;
     font-size: 2.2rem;
     line-height: 1.15;
 }
 
 .opening-text h2 {
     margin-top: 0;
-    color: #f58220;
+    color: #fe731d;
     font-size: 1.2rem;
     line-height: 1.15;
 }
@@ -340,6 +371,9 @@ body {
     padding-right: 60px;
     font-weight: bold;
 }
+
+
+/* CSS styling for the meet the boss section */
 
 
 .boss-section {
@@ -382,7 +416,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.15;
     margin: 0 0 20px;
-    color: #f58220;
+    color: #fe731d;
 }
 
 .boss-text p {
@@ -392,6 +426,10 @@ body {
     margin-bottom: 10px;
 }
 
+
+/* CSS styling for the Google reviews section */
+
+
 .reviews-section {
     background: #e8e8e8;
     padding: 30px 80px;
@@ -399,7 +437,7 @@ body {
 }
 
 .reviews-section h1 {
-    color: #f58220;
+    color: #fe731d;
     font-size: 1.2rem;
     margin: 0 0 40px;
 }
@@ -419,24 +457,149 @@ body {
     box-sizing: border-box;
 }
 
-.popular {
 
+/* CSS styling for the most popular doors section */
+
+
+.popular-doors-section {
+    background: #fff;
+    padding: 30px 175px;
 }
 
-.whychoose {
-
+.popular-doors-section h1 {
+    color: #fe731d;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 0 40px;
 }
 
-.whatis {
-
+.popular-doors-card p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    font-weight: 700;
 }
+
+.popular-doors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    column-gap: 70px;
+    row-gap: 45px;
+}
+
+.popular-doors-card {
+    width: 100px;
+    text-align: center;
+}
+
+.popular-doors-card img {
+    width: 75px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+}
+
+.door-btn {
+    display: inline-block;
+    margin-top: 2px;
+    padding: 1px 14px;
+    background: #fe731d;
+    color: #eee;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.door-btn:hover {
+    background: #e46f10;
+    transform: translateY(-2px);
+}
+
+
+/* CSS styling for the why choose us section */
+
+
+.choose-section {
+    background: #fe731d;
+    padding: 20px 200px;
+}
+
+.choose-section h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 45px;
+}
+
+.choose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.choose-card {
+    background: #fff;
+    text-align: center;
+    padding: 10px 10px 40px;
+    border-radius: 8px;
+    position: relative;
+    border-bottom: 6px solid #000;
+}
+
+.choose-card h2 {
+    margin: 0 0 15px;
+    font-size: 1.2rem;
+}
+
+.choose-card p {
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1,6;
+    color: #555;
+}
+
+
+/* CSS styling for the what is a composite door section */
+
+
+.whatis-section {
+    background: #e8e8e8;
+    padding: 70px 80px;
+}
+
+.whatis-content {
+    max-width: 670px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.whatis-content h1 {
+    color: #fe731d;
+    font-size: 1.6rem;
+    margin: 0 0 25px;
+}
+
+.whatis-content p {
+    color: #222;
+    font-size: 0.75rem;
+    line-height: 1.8;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+/* CSS styling for the frequently asked questions section */
+
 
 .faqs {
 
 }
 
 
-/* CSS Styling to make page responsive on tablet size screens */
+/* CSS Styling to make page responsive on middle size tablet size screens - Anything up to 900 pixels */
 
 
 @media (max-width: 900px) {
@@ -517,10 +680,76 @@ body {
     .boss-image img {
         height: 420px;
     }
+
+    .popular-doors-section {
+        padding: 55px 40px;
+    }
+
+    .popular-doors-section h1 {
+        font-size: 1.8rem;
+        margin-bottom: 28px;
+    }
+
+    .popular-doors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 45px;
+        row-gap: 40px;
+    }
+
+    .popular-doors-card {
+        width: 135px;
+    }
+
+    .popular-doors-card img {
+        width: 115px;
+    }
+
+    .popular-doors-card p {
+        font-size: 1rem;
+    }
+
+    .door-btn {
+        padding: 6px 16px;
+        font-size: 0.82rem;
+    }
+
+    .choose-section {
+        padding: 55px 40px;
+    }
+
+    .choose-section h1 {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    .choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .choose-card {
+        padding: 30px 22px 26px;
+    }
+
+    .choose-card i {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+    }
+
+    .choose-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+
+    .choose-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
 
 
-/* CC Styling to make page responsive on mobile size screens */
+/* CSS styling to make page responsive on smaller mobile size screens - Anything under 600 pixels */
+
 
 @media (max-width: 600px) {
     body {
@@ -679,5 +908,72 @@ body {
     .boss-image img {
         height: 330px;
         object-fit: cover;
+    }
+
+    .popular-doors-section {
+        padding: 45px 20px;
+    }
+
+    .popular-doors-section h1 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .popular-doors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 32px;
+    }
+
+    .popular-doors-card {
+        width: 120px;
+    }
+
+    .popular-doors-card img {
+        width: 100px;
+    }
+
+    .popular-doors-card p {
+        margin: 7px 0;
+        font-size: 0.92rem;
+    }
+
+    .door-btn {
+        padding: 5px 14px;
+        font-size: 0.78rem;
+    }
+
+    .choose-section {
+        padding: 45px 20px;
+    }
+
+    .choose-section h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .choose-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .choose-card {
+        padding: 28px 20px 24px;
+    }
+
+    .choose-card i {
+        font-size: 2.3rem;
+        margin-bottom: 14px;
+    }
+
+    .choose-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .choose-card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
     }
 }
