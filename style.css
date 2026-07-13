@@ -3,10 +3,10 @@
 
 body {
     margin: 0;
-    padding: 40px;
+    padding: 10px;
 
     background: #d8d8d8;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -14,9 +14,10 @@ body {
 
 
 .brochure {
+    font-family: "Montserrat", sans-serif;
     width: min(1070px, 92vw);
     margin: auto;
-    background: #d8d8d8;
+    background: #f7f7f7;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15),
@@ -32,7 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px 80px;
+    padding: 5px 80px;
     background: white;
 }
 
@@ -51,7 +52,7 @@ body {
 
 .phone-text-top,
 .phone-text-bottom {
-    font-size: 10px;
+    font-size: 8px;
     font-weight: bold;
     color: #333;
 }
@@ -61,9 +62,9 @@ body {
     align-items: center;
     gap: 8px;
 
-    padding: 10px 20px;
+    padding: 5px 15px;
 
-    background: #fe731d;
+    background: #ff751f;
     color: white;
 
     text-decoration: none;
@@ -92,7 +93,7 @@ body {
 
 .hero {
     position: relative;
-    height: 550px;
+    height: 420px;
     overflow: hidden;
 }
 
@@ -118,7 +119,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 15px;
     line-height: 1.25;
     margin: 0;
@@ -126,11 +127,12 @@ body {
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin: 0;
     padding-left: 20px;
     margin-bottom: 15px;
+    padding-top: 50px;
 }
 
 .hero-content li {
@@ -146,7 +148,6 @@ body {
     background: #000;
     padding: 16px 70px;
     color: #fff;
-    margin-top: 12px;
 }
 
 .banner-content {
@@ -158,7 +159,7 @@ body {
 
 .banner-content h2 {
     margin: 0;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.2;
 }
@@ -191,7 +192,7 @@ body {
     padding: 0 24px;
     border: none;
     border-radius: 30px;
-    background: #fe731d;
+    background: #ff751f;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -238,7 +239,7 @@ body {
 .door-card h3 {
     margin: 12px 0 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
 }
 
@@ -247,7 +248,7 @@ body {
 
 
 .fitted-section {
-    background: #fe731d;
+    background: #ff751f;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
@@ -260,7 +261,7 @@ body {
 
 .fitted-section h1 {
     margin: 0 0 20px;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
     padding-bottom: 20px;
@@ -314,7 +315,7 @@ body {
 }
 
 .opening-card {
-    background: #e8e8e8;
+    background: #f7f7f7;
     display: grid;
     grid-template-columns: 1fr 550px;
     align-items: start;
@@ -328,14 +329,14 @@ body {
 
 .opening-text h1 {
     margin-top: 0;
-    color: #fe731d;
+    color: #ff751f;
     font-size: 2.2rem;
     line-height: 1.15;
 }
 
 .opening-text h2 {
     margin-top: 0;
-    color: #fe731d;
+    color: #ff751f;
     font-size: 1.2rem;
     line-height: 1.15;
 }
@@ -416,7 +417,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.15;
     margin: 0 0 20px;
-    color: #fe731d;
+    color: #ff751f;
 }
 
 .boss-text p {
@@ -431,13 +432,13 @@ body {
 
 
 .reviews-section {
-    background: #e8e8e8;
+    background: #f7f7f7;
     padding: 30px 80px;
     text-align: center;
 }
 
 .reviews-section h1 {
-    color: #fe731d;
+    color: #ff751f;
     font-size: 1.2rem;
     margin: 0 0 40px;
 }
@@ -467,7 +468,7 @@ body {
 }
 
 .popular-doors-section h1 {
-    color: #fe731d;
+    color: #ff751f;
     text-align: center;
     font-size: 1.2rem;
     margin: 0 0 40px;
@@ -503,7 +504,7 @@ body {
     display: inline-block;
     margin-top: 2px;
     padding: 1px 14px;
-    background: #fe731d;
+    background: #ff751f;
     color: #eee;
     text-decoration: none;
     font-size: 0.85rem;
@@ -522,7 +523,7 @@ body {
 
 
 .choose-section {
-    background: #fe731d;
+    background: #ff751f;
     padding: 20px 200px;
 }
 
@@ -560,12 +561,18 @@ body {
     color: #555;
 }
 
+.choose-card img {
+    padding-top: 20px;
+    height:50px;
+    width: 50px;
+}
+
 
 /* CSS styling for the what is a composite door section */
 
 
 .whatis-section {
-    background: #e8e8e8;
+    background: #f7f7f7;
     padding: 70px 80px;
 }
 
@@ -576,7 +583,7 @@ body {
 }
 
 .whatis-content h1 {
-    color: #fe731d;
+    color: #ff751f;
     font-size: 1.6rem;
     margin: 0 0 25px;
 }
@@ -594,9 +601,104 @@ body {
 /* CSS styling for the frequently asked questions section */
 
 
-.faqs {
-
+.faq-section {
+    background: #fff;
+    padding: 70px 80px;
 }
+
+.faq-section h1 {
+    color: #ff751f;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 0 20px;
+}
+
+.faq-section p {
+    color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.faq-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.faq {
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+.faq-question {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 8px 18px 8px 20px;
+    background: #ff751f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background: #e46f10;
+}
+
+.faq-question:focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+}
+
+.faq-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #fff;
+    color: #000;
+    border-radius: 50px;
+}
+
+.faq-icon i {
+    font-size: 0.95rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    background: #fff;
+    color: #000;
+    padding: 11px 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+}
+
+.faq-answer p {
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.faq.active .faq-answer {
+    display: block;
+}
+
+.faq.active .faq-icon i {
+    transform: rotate(180deg);
+}
+
+
 
 
 /* CSS Styling to make page responsive on middle size tablet size screens - Anything up to 900 pixels */
@@ -760,7 +862,6 @@ body {
         flex-direction :column;
         gap: 15px;
         padding: 18px 20px;
-
     }
 
     .logo {
