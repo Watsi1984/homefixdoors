@@ -16,3 +16,15 @@ faqItems.forEach((faq) => {
         );
     });
 });
+
+const locationSelect = document.querySelector(".location-select");
+
+if (locationSelect) {
+    locationSelect.addEventListener("change", function () {
+        const selectedPage = this.value;
+
+        if (selectedPage) {
+            window.location.href = selectedPage;
+        }
+    });
+}
